@@ -57,7 +57,7 @@
 //This handles messages published from the MQTT server when subscribed
 void receivedFromCloud(uint8_t *topic, uint8_t *payload)
 {
-	char *toggleToken = "\"YellowLEDStatus\":";
+	char *toggleToken = "\"LightSwitch\":";
     char *subString;
     
     if ((subString = strstr((char*)payload, toggleToken)))
@@ -82,7 +82,7 @@ void sendToCloud(void)
    // int len = sprintf(json, "{\"id\":\"1\",\"version\":\"1.0\",\"params\":{\"Status\":1,\"Data\":\"Hello,
    // world!\",\"Light\":%d,\"Temp\":\"%d.%02d\"},\"method\":\"thing.event.property.post\"}",light,rawTemperature/100,abs(rawTemperature)%100);
    int len = sprintf(json,
-	               "{\"id\":\"1\",\"version\":\"1.0\",\"params\":{\"YellowLEDStatus\":%u,\"Light\":%d,\"Temp\":\"%d."
+	               "{\"id\":\"1\",\"version\":\"1.0\",\"params\":{\"LightSwitch\":%u,\"CurrentTemperature\":%d,\"CurrentHumidity\":\"%d."
 	               "%02d\"},\"method\":\"thing.event.property.post\"}",
 	               ledYellowStatus,
 	               light,
