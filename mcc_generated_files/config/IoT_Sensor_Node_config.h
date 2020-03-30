@@ -20,14 +20,14 @@
 // <s> project id
 // <i> Google Cloud Platform project id
 // <id> project_id
-#define CFG_PRODUCT_KEY "a11v7xKKAWn"
+#define CFG_PRODUCT_KEY "a12SBAhLjnt"
 
 // <s> registry id
 // <i> Google Cloud Platform registry id
 // <id> registry_id
-#define CFG_DEVICE_NAME "R1AjbfDhOGRuAiH9iDGk"
+#define CFG_DEVICE_NAME "D804"
 
-#define CFG_DEVICE_SECRET "bPTya5hLye8AuwcC7kXELkv3Xf3kiJrs"
+#define CFG_DEVICE_SECRET "Zv4yGHpUN3fGWljc2OAndunvtRUyGg7g"
 
 #define CFG_WRITE_DEVICE_SECRET 1
 
